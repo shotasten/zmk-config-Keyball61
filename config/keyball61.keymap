@@ -29,7 +29,7 @@
         pw: pw {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(T) &kp S &kp H &kp I &kp O &kp R &kp I &kp AT &kp N0 &kp N6 &kp N0 &kp N4>;
+            bindings = <&kp LS(T) &kp S &kp H &kp I &kp O &kp R &kp I &kp AT &kp N0 &kp N6 &kp N0 &kp N4 &kp ENTER>;
             label = "PW";
         };
     };
@@ -50,11 +50,11 @@
 
         funcation {
             bindings = <
-&trans  &kp F1   &kp F2      &kp F3             &kp F4           &kp N5                                      &kp F6             &kp F7          &kp F8            &kp F9           &kp F10  &kp F11
-&trans  &kp F11  &kp F12     &trans             &trans           &trans                                      &trans             &trans          &kp UP_ARROW      &trans           &trans   &trans
-&trans  &trans   &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans                                      &kp LEFT_SHIFT     &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &trans   &trans
-&trans  &trans   &trans      &trans             &trans           &trans             &trans           &pw     &kp RIGHT_CONTROL  &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_NEXT       &trans   &trans
-&trans  &trans   &trans      &trans             &kp K_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans                                                                &trans   &trans
+&trans  &kp F1   &kp F2      &kp F3             &kp F4           &kp N5                                           &kp F6             &kp F7          &kp F8            &kp F9           &kp F10  &kp F11
+&trans  &kp F11  &kp F12     &trans             &trans           &trans                                           &trans             &trans          &kp UP_ARROW      &trans           &trans   &trans
+&trans  &trans   &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans                                           &kp LEFT_SHIFT     &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &trans   &trans
+&trans  &trans   &trans      &trans             &trans           &trans             &kt LS(LG(NUMBER_4))  &pw     &kp RIGHT_CONTROL  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT       &trans   &trans
+&trans  &trans   &trans      &trans             &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP       &trans  &bt BT_NXT                                                            &trans   &bt BT_NXT
             >;
 
             label = "FUNC";
